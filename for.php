@@ -93,10 +93,10 @@
 	
 	
 	$memberInfo = array();
-	$memberInfo['username'] = "eric";
-	$memberInfo['truename'] = "袁明贺";
+	$memberInfo['username'] = "ycdeng";
+	$memberInfo['truename'] = "嘟嘟";
 	$memberInfo['age'] = 25;
-	$memberInfo['imooc'] = "http://www.imooc.com";
+	$memberInfo['url'] = "http://www.baidu.com";
 	$memberInfo['hobby']['one'] = "developer";
 	$memberInfo['hobby']['two'] = "coding";
 	$memberInfo['hobby']['three'] = "学习";
