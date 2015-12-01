@@ -1,0 +1,26 @@
+<pre>
+注意分号，代表结束。
+create database u2; 创建数据库
+show databases; 显示所有的数据库。
+use u2;//设置默认数据库
+drop database 数据库名；删除数据库。
+create table tableName(字段名 字段类型,字段名 字段类型);创建表 create table student(id int,user varchar(30));
+DESC 数据表：查看表结构。
+	desc 数据表	 列名  eg:DESC student;  DESC student id;
+alter table student add email varchar(50);//添加表字段。
+rename table 表名1 to 新名1,表名2 to 新名2	;//修改多个表名
+drop table 表名：删除表。
+</pre>
+<pre>
+插入记录：insert into 表名(字段1，字段2) values(值1，值2.。)
+查询记录：select col_list form 表名 where 条件 group by 列名 order by 排序字段名 limit count；
+	col_list：要显示的字段，多个字段用逗号。where限制条件 group by 对结果进行分组 order by对结果进行排序 limit 限定输出的结果。
+	   select * form student where id="1"; 
+	多表查询：where 表1.字段=表2.字段 and 其他条件
+修改记录:
+	update 表名 set colName=nVal,colName=nVal[,where ..]
+		若没有where，则所有记录的某些字段修改。有where就可以限制到某条记录或某几条记录。
+删除记录：
+	delete form 表名 where 条件。没有where则将删除所有记录。	
+	
+</pre>
