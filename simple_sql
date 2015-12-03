@@ -1,3 +1,4 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <pre>
 注意分号，代表结束。
 create database u2; 创建数据库
@@ -23,4 +24,33 @@ drop table 表名：删除表。
 删除记录：
 	delete form 表名 where 条件。没有where则将删除所有记录。	
 	
+</pre>
+
+<pre>
+CREATE DATABASE  `db_study` ;
+修改数据库名可：
+CREATE DATABASE  `db_study2` ;
+DROP DATABASE  `db_study` ;
+创建表：
+CREATE TABLE  `tb_admin` (
+ `id` VARCHAR( 3 ) NOT NULL ,
+ `name` VARCHAR( 30 ) NOT NULL ,
+ `age` FLOAT( 3 ) NOT NULL
+) ENGINE = INNODB;
+
+ALTER TABLE  `tb_admin` CHANGE  `age`  `age` INT NOT NULL
+
+ALTER TABLE  `tb_admin` CHANGE  `age`  `age` INT( 11 ) NULL  age可为空
+
+ALTER TABLE  `tb_admin` DROP  `age`  删除age字段
+INSERT INTO  `tb_admin` (  `id` ,  `name` ) VALUES ( 20,  '3' ) ;插入一条记录。
+UPDATE  `db_study`.`tb_admin` SET  `id` =  '1',`name` =  'y3333c';修改一条记录
+
+INSERT INTO  `tb_admin` (  `id` ,  `name` ) VALUES ( 20,  '3' ) ;插入一条记录。
+INSERT INTO  `tb_admin` (  `id` ,  `name` ) VALUES ( 120,  '343' ) ;插入一条记录。
+
+UPDATE  `db_study`.`tb_admin` SET  `id` =  '12',`name` =  '中国';修改一条记录
+UPDATE  `db_study`.`tb_admin` SET  `id` =  '23',`name` =  '人民';修改一条记录
+
+SELECT  `name` FROM  `tb_admin` ORDER BY  `id` DESC ;//搜索记录，只显示name，以id降序显示。
 </pre>
